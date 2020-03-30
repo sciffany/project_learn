@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v2.min.js?2.9.3"></script>
+        <style>
+            .arial {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .vertical {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .horizontal {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            #svg {
+                width: 1350px;
+                height: 800px;
+            }
+            .big {
+                height: 200px;
+                width: 400px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="vertical arial">
+            <h1>
+                Concept Learning Visualisation
+            </h1>
+            <!-- <div class="horizontal">
+                Training Data<input class="big"></input>
+            </div>
+            <div class="horizontal">
+                Specific Bound<input></input>
+                General Bound<input></input>
+            </div> -->
+
+            <svg id="svg"></svg>
+        </div>
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
